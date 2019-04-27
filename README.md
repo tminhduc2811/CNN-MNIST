@@ -7,13 +7,18 @@ An example of CNN for Image Classification using MNIST data set
   <img src="Images/Model.png">
 </p>
 
-"""
-An example of CNN for Image Classification using MNIST data set
-Model used: Input (Gray Images 28*28) => 2 x Convolutional layer(Kernel = 32, Stride = 1, Padding = 1) -> output(28*28*32) => Pooling layer(2*2) -> output(14*14*32) => FLATTEN(14*14*32 nodes) -
-=> Fully connected layer 1 (128 nodes, activation: sigmoid function)
-=> Fully connected layer 2 (10 nodes for [0..9], activation: soft-max function)
 
-"""
+An example of CNN for Image Classification using MNIST data set
+# Model used: 
+```
+- Input (Gray Images 28*28) 
+- Convolutional layer(Kernel = 32, Stride = 1, Padding = 1) 
+- Pooling layer(2*2) 
+- FLATTEN(14*14*32 nodes) 
+- Fully connected layer 1 (128 nodes, activation: sigmoid function)
+- Fully connected layer 2 (10 nodes for [0..9], activation: soft-max function)
+
+```
 
 ## Train result:
 
