@@ -4,7 +4,7 @@ An example of CNN for Image Classification using MNIST data set
 ## Model: 
 
 <p align="center">
-  <img src="Model.JPG">
+  <img src="Model.png">
 </p>
 
 ## Result:
