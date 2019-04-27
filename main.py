@@ -3,10 +3,11 @@ import matplotlib.pyplot as plt
 from keras import *
 """
 An example of CNN for Image Classification using MNIST data set
-Model used: Input (Gray Image 28*28) => 2 x Convolutional layer(Kernel = 32, Stride = 1, Padding = 1) -
-output(28*28*32) => Pooling layer(2*2) - output(14*14*32) => FLATTEN(14*14*32 nodes) -
+Model used: Input (Gray Image 28*28) => 2 x Convolutional layer(Kernel = 32, Stride = 1, Padding = 1) ->
+output(28*28*32) => Pooling layer(2*2) -> output(14*14*32) => FLATTEN(14*14*32 nodes) -
 => Fully connected layer 1 (128 nodes, activation: sigmoid function)
 => Fully connected layer 2 (10 nodes for [0..9], activation: soft-max function)
+
 """
 
 # Load MNIST dataset from Keras, include 60,000 training set & 10,000 test set
@@ -57,7 +58,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 # Start training model
 # Batch size = 32, Epochs = 10, Verbose = 1
 batch_size = 32
-epochs = 1
+epochs = 5
 verbose = 1
 H = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=verbose, validation_data=(x_val, y_val))
 
