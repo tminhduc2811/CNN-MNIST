@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from keras import *
+
 """
 An example of CNN for Image Classification using MNIST data set
 Model used: Input (Gray Image 28*28) => 2 x Convolutional layer(Kernel = 32, Stride = 1, Padding = 1) ->
