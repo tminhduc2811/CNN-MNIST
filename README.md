@@ -7,9 +7,6 @@ An example of CNN for Image Classification using MNIST data set
   <img src="Images/Model.png">
 </p>
 
-
-An example of CNN for Image Classification using MNIST data set
-# Model used: 
 ```
 - Input (Gray Images 28*28) 
 - Convolutional layer(Kernel = 32, Stride = 1, Padding = 1) 
